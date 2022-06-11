@@ -1,12 +1,12 @@
 from abc import ABC, abstractmethod
 
 
-class Shape(ABC):
+class Shape(ABC):  # Can't instantiate abstract class Shape with abstract methods area
     def __init__(self, dim1, dim2):
         self.dim1 = dim1
         self.dim2 = dim2
 
-    @abstractmethod
+    @abstractmethod  # abstractmethod must be implemented
     def area(self):
         pass
 
